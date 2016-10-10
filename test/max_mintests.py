@@ -24,3 +24,8 @@ class MaxMinTest(unittest.TestCase):
         self.assertListEqual([1, 4],
                              find_max_min([1, 2, 3, 4]),
                              msg='should return [1,4] for [1, 2, 3, 4]')
+
+    def test_find_max_min_identity(self):
+        self.assertListEqual([4],
+                             find_max_min([4, 4, 4, 4]),
+                             msg='Return the number of elements in the list in a new list if the `min` and `max` are equal')
