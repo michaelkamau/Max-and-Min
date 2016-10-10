@@ -14,3 +14,8 @@ class MaxMinTest(unittest.TestCase):
         self.assertListEqual([4, 6],
                              find_max_min([6, 4]),
                              msg='should return [4, 6] for [6, 4]')
+
+    def test_find_max_min_two(self):
+        self.assertListEqual([2, 78],
+                             find_max_min([4, 66, 6, 44, 7, 78, 8, 68, 2]),
+                             msg='should return [2, 78] for [4, 66, 6, 44, 7, 78, 8, 68, 2]')
