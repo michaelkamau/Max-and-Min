@@ -1,4 +1,4 @@
-# Max Min
+# Max and Min
 
 The repo implements a python function guided by [these tests](test/max_mintests.py)
 
